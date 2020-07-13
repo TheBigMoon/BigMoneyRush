@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	background-image: url(media/background.png);
+	background-size: cover;
+	height: 652px;
+	padding: 0 23%;
+}
+
+main .logo {
+	padding: 45px 0;
+}
+
+.content {
+	display: flex;
+}
+
+.left_side {
+	width: 58%;
+	padding-right: 10%;
+}
+
+.title_block {
+	margin-bottom: 35px;
+}
+
+.title_block .title {
+	color: white;
+	text-indent: 16px;
+	text-indent: 0;
+}
+
+.title_block .title#big{
+	font-size: 40px;
+	font-weight: 800;
+	padding-bottom: 16px;
+	line-height: 46px;
+}
+
+.title_block .title#small{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.left_side .video {
+	background-color: #000;
+	width: 600px;
+	height: 340px;
+	color: white;
+}
+.right_side {
+	width: 32%;
+}
