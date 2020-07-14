@@ -54,10 +54,10 @@ body {
 }
 
 .left_side .video {
-	background-color: #000;
+	background-color: white;
 	width: 100%;
+	height: 3200px;
 	height: auto;
-	color: white;
 }
 .right_side {
 	width: 32%;
@@ -204,4 +204,78 @@ body {
 .black_background {
 	height: 160px;
 	background-color: black;
+}
+
+.white_background {
+	height: 100px;
+	background-color: white;
+}
+
+.white_background_title {
+	margin-top: 10px;
+	margin-left: calc(20% + 20px);
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.item_wrapper {
+	width: 266px;
+	height: 159px;
+	background: url(media/ItemBackGround.png);
+}
+
+.slider_item {
+	padding: 30px 37px 0 37px;
+}
+
+.upper_part {
+	display: flex;
+	flex-direction: column;
+}
+
+.upper_part	.item_name {
+	font-size: 19px;
+	font-weight: 800;
+}
+
+.upper_part	.item_info {
+	font-size: 17px;
+	font-weight: 700;
+	color: #6b6b6b;
+}
+
+.bottom_part {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+.bottom_part .money {
+	font-size: 24px;
+	font-weight: 800;
+	color: #fd3675;
+}
+
+.bottom_part .money_image {
+	background: url(media/nounMoney.png);
+}
+
+
+
+
+
+
+
+.blue_background {
+	height: 125px;
+	background-color: #10005c;
 }
