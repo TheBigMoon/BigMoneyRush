@@ -11,7 +11,7 @@ main {
 	background-image: url(media/background.png);
 	background-size: cover;
 	height: 652px;
-	padding: 0 23%;
+	padding: 0 20%;
 }
 
 main .logo {
@@ -27,8 +27,12 @@ main .logo {
 	padding-right: 10%;
 }
 
-.title_block {
+.left_side {
 	margin-bottom: 35px;
+}
+
+.title_block{
+	margin-bottom: 30px;
 }
 
 .title_block .title {
@@ -51,10 +55,148 @@ main .logo {
 
 .left_side .video {
 	background-color: #000;
-	width: 600px;
-	height: 340px;
+	width: 100%;
+	height: auto;
 	color: white;
 }
 .right_side {
 	width: 32%;
+	width: 412px;
+}
+
+.form_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.steps {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	margin: 14px 0 24px 0;
+	padding: 0 11px;
+	background-color: #1b0195;
+	border-radius: 15px;
+	color: white;
+}
+
+.step_title {
+	font-size: 16px;
+	margin-right: 5px;
+	font-weight: 700;
+}
+
+.step_nums {
+	font-weight: 500px;
+}
+
+.form_title#big {
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.form_title#small {
+	font-size: 27px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+
+.form_block form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.form_block form input {
+	margin: 0 15px 10px 15px;
+	padding: 17px 20px;
+	outline: none;
+	background-color: #eceef1;
+	border: none;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.form_block form .submitBtn {
+	border: none;
+	border-radius: 32.5px;
+	outline: none;
+	margin: 0 15px 40px 15px;
+	padding: 20px 25px;
+	font-size: 15px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: white;
+	background: linear-gradient(#fd3675, #ff6a52);
+	cursor: pointer;
+}
+
+.offer {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 0 40px;
+	margin-bottom: 50px; 
+}
+
+.offer img {
+	width: 40px;
+	height: 25px;
+}
+
+.offer p {
+	margin-left: 15px;
+}
+
+.offer p a {
+	text-decoration: none;
+	color: #fd3277;
+}
+
+.money_and_sponsors {
+	flex-direction: row;
+}
+
+.money {
+	display: flex;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.bid, .ask {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 50%;
+	font-size: 24px;
+	color: white;
+}
+
+.ask {
+	margin-left: 10px;
+}
+
+.bid_count, .ask_count {
+	color: #fd3277;
+	margin-left: 10px;
+}
+
+.sponsors {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.sponsors img {
+	height: 100%;
 }
