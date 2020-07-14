@@ -7,14 +7,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-main {
+.page {
 	background-image: url(media/background.png);
 	background-size: cover;
 	height: 652px;
 	padding: 0 20%;
 }
 
-main .logo {
+.page .logo {
 	padding: 45px 0;
 }
 
@@ -199,4 +199,9 @@ main .logo {
 
 .sponsors img {
 	height: 100%;
+}
+
+.black_background {
+	height: 160px;
+	background-color: black;
 }
