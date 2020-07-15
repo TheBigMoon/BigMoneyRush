@@ -229,11 +229,6 @@ body {
 	background: url(media/ItemBackGround.png);
 }
 
-.slider {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
 
 .slider_item {
 	padding: 30px 37px 0 37px;
