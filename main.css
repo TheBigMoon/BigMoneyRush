@@ -217,16 +217,22 @@ body {
 	font-weight: 800;
 }
 
+#slider {
+    width:100%;
+    overflow:hidden;
+}
+
+.slide {
+    float:left;
+    max-width: 266px;
+	height: 159px;
+	background: url(media/ItemBackGround.png);
+}
+
 .slider {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
-
-.item_wrapper {
-	width: 266px;
-	height: 159px;
-	background: url(media/ItemBackGround.png);
 }
 
 .slider_item {
