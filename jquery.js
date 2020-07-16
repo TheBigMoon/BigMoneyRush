@@ -29,6 +29,10 @@ $('.submitBtn').click(function() {
 	$('#popUpSurname').html(surname || 'empty');
 	$('#popUpEmail').html(email || 'empty');
 
+	$('.form_name')[0].value = '';
+	$('.form_surname')[0].value = '';
+	$('.form_email')[0].value = '';
+	
 	$('.popUp_background').css("display", "flex")
 })
 
