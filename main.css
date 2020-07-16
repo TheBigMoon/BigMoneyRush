@@ -9,17 +9,34 @@ body {
 
 .page {
 	background-image: url(media/background.png);
-	background-size: cover;
-	height: 652px;
-	padding: 0 20%;
 }
 
-.page .logo {
-	padding: 45px 0;
+@media (max-width: 1200px) {
+	.page {
+		background-size: cover;
+	}
+}
+
+.logo {
+	padding: 35px 0 35px 20%;
 }
 
 .content {
+	position: relative;
 	display: flex;
+	flex-direction: row;
+	padding: 0 20%;
+	z-index: 5;
+}
+
+@media (max-width: 1500px) {
+	.logo {
+	padding: 45px 0 45px 10%;
+	}
+
+	.content {
+		padding: 0 10%;
+	}	
 }
 
 .left_side {
@@ -27,8 +44,22 @@ body {
 	padding-right: 10%;
 }
 
-.left_side {
-	margin-bottom: 35px;
+@media (max-width: 1000px) {
+	.logo {
+		width: 400px;
+		height: 66px;
+		padding: 45px 0 45px 5%;
+	}
+	.content {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 5%;
+	}
+	.left_side {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 35px;
+	}
 }
 
 .title_block{
@@ -37,8 +68,6 @@ body {
 
 .title_block .title {
 	color: white;
-	text-indent: 16px;
-	text-indent: 0;
 }
 
 .title_block .title#big{
@@ -48,18 +77,43 @@ body {
 	line-height: 46px;
 }
 
+@media (max-width: 1000px) {
+	.title_block .title#big {
+		font-size: 60px;
+		line-height: 66px;
+	}
+}
+
 .title_block .title#small{
 	font-size: 18px;
 	font-weight: 500;
 }
 
+@media (max-width: 1000px) {
+	.title_block .title#small {
+		font-size: 27px;
+	}
+}
+
 .left_side .video {
 	width: 100%;
+	height: 320px;
+}
+
+@media (max-width: 1000px) {
+	.left_side .video {
+		height: 480px;
+	}
 }
 
 .right_side {
-	width: 32%;
 	width: 412px;
+}
+
+@media (max-width: 1000px) {
+	.right_side {
+		width: 824px;
+	}
 }
 
 .form_block {
@@ -70,7 +124,7 @@ body {
 	border-radius: 5px;
 	background-color: white;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .steps {
@@ -95,15 +149,45 @@ body {
 	font-weight: 500px;
 }
 
+@media (max-width: 1000px) {
+	.form_block {
+		margin-bottom: 40px;
+	}
+	.steps {
+		margin: 28px 0 48px 0;
+		padding: 0 22px;
+		height: 60px;
+		border-radius: 30px;
+	}
+	.step_title {
+		font-size: 32px;
+	}
+	.step_nums {
+		font-size: 32px;
+	}
+}
+
 .form_title#big {
 	font-size: 34px;
 	font-weight: 800;
+}
+
+@media (max-width: 1000px) {
+	.form_title#big {
+		font-size: 68px;
+	}
 }
 
 .form_title#small {
 	font-size: 27px;
 	font-weight: 800;
 	margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+	.form_title#small {
+		font-size: 54px;
+	}
 }
 
 .form_block form {
@@ -123,6 +207,15 @@ body {
 	font-weight: 500;
 }
 
+@media (max-width: 1000px) {
+	.form_block form input {
+		margin: 0 30px 40px 30px;
+		padding: 34px 40px;
+		font-size: 32px;
+		border-radius: 40px;
+	}
+}
+
 .form_block form .submitBtn {
 	border: none;
 	border-radius: 32.5px;
@@ -137,6 +230,13 @@ body {
 	cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+	.form_block form .submitBtn {
+		font-size: 30px;
+		margin: 0 30px 80px 30px;
+	}
+}
+
 .offer {
 	display: flex;
 	flex-direction: row;
@@ -144,7 +244,7 @@ body {
 	align-items: center;
 	color: white;
 	padding: 0 40px;
-	margin-bottom: 50px; 
+	margin-bottom: 40px; 
 }
 
 .offer img {
@@ -159,6 +259,20 @@ body {
 .offer p a {
 	text-decoration: none;
 	color: #fd3277;
+}
+
+@media (max-width: 1000px) {
+	.offer {
+		margin-bottom: 100px;
+	}
+	.offer img {
+		width: 80px;
+		height: 50px;
+	}
+	.offer p {
+		margin-left: 20px;
+		font-size: 32px;
+	}
 }
 
 .money_and_sponsors {
@@ -184,7 +298,7 @@ body {
 	margin-left: 10px;
 }
 
-.bid_count, .ask_count {
+#bid_count, #ask_count {
 	color: #fd3277;
 	margin-left: 10px;
 }
@@ -195,13 +309,56 @@ body {
 	justify-content: space-around;
 }
 
-.sponsors img {
-	height: 100%;
+@media (max-width: 1000px) {
+	.money_and_sponsors {
+		flex-direction: row;
+	}
+	.money {
+		margin-bottom: 30px;
+	}
+	.bid, .ask {
+		font-size: 48px;
+	}
+	.ask {
+		margin-left: 20px;
+	}
+	.sponsors img {
+		height: 100%;
+	}
+	.sponsors .bitGo {
+		width: 110px;
+		height: 46px;
+	}
+	.sponsors .mcAfee {
+		width: 156px;
+		height: 42px;
+	}
+	.sponsors .norton {
+		width: 98px;
+		height: 52px;
+	}
+	.sponsors .secure_trading {
+		width: 166px;
+		height: 40px;
+	}
+}
+
+.backgrounds {
+	margin-top: -110px;
 }
 
 .black_background {
 	height: 160px;
 	background-color: black;
+}
+
+@media (max-width: 1000px) {
+	.backgrounds {
+		margin-top: -200px;
+	}
+	.black_background {
+		height: 320px;
+	}
 }
 
 .white_background {
@@ -210,28 +367,54 @@ body {
 }
 
 .white_background_title {
-	margin-top: 10px;
+	padding-top: 10px;
 	margin-left: calc(20% + 20px);
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 800;
 }
 
-#slider {
-    width:100%;
+@media (max-width: 1000px) {
+	.white_background {
+		height: 200px;
+	}
+	.white_background_title {
+		font-size: 32px;
+	}
+}
+
+.slider {
+    width: 100%;
     overflow:hidden;
+}
+
+.slide-container {
+	width: 1862px;
 }
 
 .slide {
     float:left;
-    max-width: 266px;
+    width: 266px;
 	height: 159px;
 	background: url(media/ItemBackGround.png);
+	background-size: cover;
 }
-
 
 .slider_item {
 	padding: 30px 37px 0 37px;
+}
+
+@media (max-width: 1000px) {
+	.slide-container {
+		width: 2793px;
+	}
+	.slide {
+		width: 399px;
+		height: 238px;
+	}
+	.slider_item {
+		padding: 45px 55.5px 45px 55.5px;
+	}
 }
 
 .upper_part {
@@ -240,14 +423,23 @@ body {
 }
 
 .upper_part	.item_name {
-	font-size: 19px;
+	font-size: 18px;
 	font-weight: 800;
 }
 
 .upper_part	.item_info {
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 700;
 	color: #6b6b6b;
+}
+
+@media (max-width: 1000px) {
+	.upper_part	.item_name {
+		font-size: 28.5px
+	}
+	.upper_part	.item_info {
+		font-size: 25.5px;
+	}
 }
 
 .bottom_part {
@@ -265,16 +457,36 @@ body {
 }
 
 .bottom_part .money_image {
-	background: url(media/nounMoney.png);
+	width: 67px;
+	height: 63px;
+}
+
+.bottom_part .money_image img{
+	width: 100%;
+	height: 100%;
 }
 
 
-
-
-
-
+@media (max-width: 1000px) {
+	.bottom_part {
+		margin-top: 10px;
+	}
+	.bottom_part .money {
+		font-size: 36px;
+	}
+	.bottom_part .money_image {
+		width: 101px;
+		height: 95px;
+	}
+}
 
 .blue_background {
 	height: 125px;
 	background-color: #10005c;
+}
+
+@media (max-width: 1000px) {
+	.blue_background {
+		height: 150px;
+	}
 }
